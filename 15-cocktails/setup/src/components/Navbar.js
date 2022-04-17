@@ -4,9 +4,21 @@ import logo from '../logo.svg'
 
 const Navbar = () => {
   return (
-    <div>
-      <h2>navbar component</h2>
-    </div>
+    <nav className='navbar'>
+      <div className="nav-center">
+        <Link to='/'>
+          <img src={logo} alt="cocktail db logo" />
+        </Link>
+      </div>
+      <ul className='nav-links'>
+        <li>
+          <Link to='/'>Home</Link>
+        </li>
+        <Link to='/about'>
+          About
+        </Link>
+      </ul>
+      </nav>
   )
 }
 
